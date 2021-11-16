@@ -8,7 +8,6 @@ public class AddDigits {
         if(String.valueOf(num).length()>1){
             num = addDigits(num);
         }
-
         return num;
     }
 
