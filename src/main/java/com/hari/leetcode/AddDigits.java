@@ -18,7 +18,7 @@ public class AddDigits {
             num /= 10;
         }
 
-        
+
         return sum;
     }
 
