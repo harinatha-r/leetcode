@@ -40,9 +40,9 @@ public class FindKPairswithSmallestSums {
         return list;
     }
     public static void main(String[] args) {
-//        kSmallestPairs(new int[]{1,7,11}, new int[]{2,4,6}, 3);
-//        kSmallestPairs(new int[]{1,1,2}, new int[]{1,2,3}, 2);
-//        kSmallestPairs(new int[]{1,2}, new int[]{3}, 3);
+        kSmallestPairs(new int[]{1,7,11}, new int[]{2,4,6}, 3);
+        kSmallestPairs(new int[]{1,1,2}, new int[]{1,2,3}, 2);
+        kSmallestPairs(new int[]{1,2}, new int[]{3}, 3);
 
         TreeMap<Integer, Integer> map = new TreeMap();
         map.put(1, 2);

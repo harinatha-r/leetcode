@@ -44,8 +44,8 @@ public class PositionsofLargeGroups {
 
     public static void main(String[] args) {
         System.out.println(largeGroupPositions("aaa"));
-//        System.out.println(largeGroupPositions("abbxxxxzzy"));
-//        System.out.println(largeGroupPositions("abc"));
-//        System.out.println(largeGroupPositions("abcdddeeeeaabbbcd"));
+        System.out.println(largeGroupPositions("abbxxxxzzy"));
+        System.out.println(largeGroupPositions("abc"));
+        System.out.println(largeGroupPositions("abcdddeeeeaabbbcd"));
     }
 }
