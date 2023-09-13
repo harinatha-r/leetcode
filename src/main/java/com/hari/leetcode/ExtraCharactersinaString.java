@@ -22,14 +22,16 @@ public class ExtraCharactersinaString {
 
     static public int minExtraChar(String s, String[] dictionary) {
 
-        int count=0;
-        Set<String> set=new HashSet<>();
-
-        for(String str:dictionary)
-            set.add(str);
-
-        
-        return 0;
+        int[] dp = new int[s.length() + 1];
+        for (int i = s.length() - 1; i >= 0; i--) {
+            dp[i] = dp[i + 1] + 1;
+            for (String word : dictionary) {
+                if (i + word.length() <= s.length() && s.startsWith(word, i)) {
+                    dp[i] = Math.min(dp[i], dp[i + word.length()]);
+                }
+            }
+        }
+        return dp[0];
     }
 
     public static void main(String[] args) {
